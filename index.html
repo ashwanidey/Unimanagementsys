@@ -8,6 +8,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMS</title>
     <link rel = "stylesheet" href = "LandingPage.css">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+      
+      /* Header/Blog Title */
+      .img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+      }
+      .header {
+        text-align: left;
+        padding: 30px;
+        text-align: center;
+        background: white;
+      }
+      
+      .header h1 {
+        font-size: 50px;
+      }
+      
+      /* Style the top navigation bar */
+      .topnav {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        float: right;
+        overflow: hidden;
+      }
+      .buttonmargin{
+        margin-left: 1rem;
+      }
+      
+      /* Style the topnav links */
+
+      
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 75%;
+      }
+      
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+      
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+      
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+    </style>
 </head>
 
 
@@ -15,35 +105,41 @@
 
 
 <!-- Logo -->
-<div style="position:fixed ; top: 20px; ">
+<div class = "header,img">
 <img src = "https://ums.lpu.in/lpuums/login_images/ums_logo.png">
 </div>
 
 
   <!-- Change password button -->
-<div style = "position: fixed; left: 1100px; top: 100px ">
+<div class = "topnav">
+
+<button class="button-81" role="button">Home</button>
+<button class="button-81" role="button">TimeTable</button>
+<button class="button-81" role="button">Examination</button>
   <a style = "text-decoration: none"  href = "./Changepass.html" target="_blank">
     <button class="button-81" role="button">Change Password</button>
 </a>
+<button class="button-81" role="button">Logout</button>
 </div>
+
 
 <!-- Home button -->
 <div style="position: fixed; top: 100px; left: 630px; right: 800px">
-  <button class="button-81" role="button">Home</button>
+  
 </div>
 <!-- Timetable button -->
-<div style="position: fixed; top: 100px; left: 770px; right: 800px">
-  <button class="button-81" role="button">TimeTable</button>
+<div style="position: fixed; top: 100px; left: 770px; right: 800p">
+  
 </div>
 
 <!-- Examintion Button -->
 <div style="position: fixed; top: 100px; left: 930px; right: 800px">
-  <button class="button-81" role="button">Examination</button>
+  
 </div>
 
 <!-- Logout buttons -->
 <div style="position: fixed; top: 100px; left: 1300px; right: 800px">
-  <button class="button-81" role="button">Logout</button>
+  
 </div>
 
 </body>
