@@ -164,14 +164,13 @@ p {
 }
 
 .card-container {
+  width: 100%;
 	background-color: #112d32;
 	border-radius: 20px;
 	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
 	color: #B3B8CD;
   padding : 30px 30px 30px 30px;
 	position: relative;
-	width: 350px;
-	max-width: 100%;
 	
 }
 
@@ -179,12 +178,13 @@ p {
 	
 	font-family: Montserrat;
 	border-radius: 3px;
+  width: 50%;
 	font-size: 17px;
 	font-weight: bold;
 	padding: 2px 9px;
 	position: absolute;
 	top: 70px;
-	left: 180px;
+	left: 170px;
 }
 
 
