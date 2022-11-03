@@ -1,5 +1,116 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.header {
+  text-align: left;
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
 
 
+
+
+/* Style the topnav links */
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  /* background-color: black; */
+  padding: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  /* background-color: #aaa; */
+  width: 50%;
+  padding: 20px;
+  float: left;
+}
+
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: beige;
+  width : 100%;
+  padding: 20px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  /* background-color: black; */
+  display: block;
+
+  padding: 40px 100px;
+  width:100%;
+ }
+.button{
+  background-color: #2e9cca;
+  box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 10px 0 10px;
+  text-decoration: none;
+  float: right;
+  overflow: hidden;
+  width : 70%;
+}
+.margin{
+  margin : 10px;
+  width : fit-content;
+}
 
 
 /* Buttons */
@@ -36,5 +147,89 @@
     font-size: 0.9rem;
     padding: 0.7rem 1.8rem;
   }
+}
+
+
+/* Profile */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.card-container {
+	background-color: #112d32;
+	border-radius: 20px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+  padding : 30px 30px 30px 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	
+}
+
+.card-container .name {
+	
+	font-family: Montserrat;
+	border-radius: 3px;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 2px 9px;
+	position: absolute;
+	top: 70px;
+	left: 180px;
+}
+
+
+.card-container .round {
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+  width: 50%;
+  flex: left;
+	padding: 7px;
+}
+
+button.primary {
+	background-color: #03BFCB;
+	border: 1px solid #03BFCB;
+	border-radius: 3px;
+	color: #231E39;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+
+button.primary.ghost {
+	background-color: transparent;
+	color: #02899C;
+}
+
+.skills {
+	background-color: #1F1A36;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid #2D2747;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
 }
 
