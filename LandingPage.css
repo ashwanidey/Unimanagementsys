@@ -98,9 +98,9 @@ body {
   fill: none;
   stroke: url(#GradientColor);
   stroke-width: 1.5vw;
-  stroke-dasharray: 472;
-  stroke-dashoffset: 472;
-  animation: anim1 2s linear forwards;
+  stroke-dasharray: 473;
+  stroke-dashoffset: 473;
+  animation: anim 2s linear forwards;
 }
 .a1{
   /* background-color: #03BFCB; */
@@ -111,9 +111,9 @@ body {
 
 }
 
-@keyframes anim1{
+@keyframes anim{
   100%{
-    stroke-dashoffset: 165;
+    stroke-dashoffset: 80;
   }
 }
 
@@ -204,7 +204,7 @@ circle{
   stroke-width: 0.5vw;
   stroke-dasharray: 210;
   stroke-dashoffset: 210;
-  animation: anim 2s linear forwards;
+  animation: anime 2s linear forwards;
 }
 
 svg{
@@ -214,7 +214,7 @@ svg{
   width: 5vw;
   height: 5vw;
 }
-@keyframes anim{
+@keyframes anime{
   100%{
     stroke-dashoffset: 0;
   }
