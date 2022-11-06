@@ -2,45 +2,55 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-}
-.header {
-  text-align: left;
-  padding: 30px;
-  text-align: center;
-  background: white;
-}
-
-.header h1 {
-  font-size: 50px;
-}
-
-
-
-
-/* Style the topnav links */
-
-
 /* Create two unequal columns that floats next to each other */
+
 /* Left column */
 .leftcolumn {
+  
   float: right;
   width: 70%;
   height: fit-content;
   /* background-color: black; */
-  padding: 20px;
+  padding: 20px 0 0 0;
 }
+
+/* Timetable */
+.time-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+  padding : 10px ;
+	position: relative;
+  
+	
+}
+.time-box{
+  width: fit-content;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+  padding : 5px ;
+}
+.text{
+  font-family:serif;
+  color: #0d172a;
+}
+.heading{
+  width: 20%;
+	/* background-color: beige; */
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+  padding : 5px ;
+}
+
+
+
 
 /* TOTAL ATTENDENCE  */ 
 #number1{
@@ -271,14 +281,29 @@ svg{
 
 
 /* Right column */
+
 .rightcolumn {
   
   float: left;
   width: 25%;
   height: fit-content;
   /* background-color: black; */
-  padding: 0;
+  padding: 32px 0 0 0 ;
 }
+/* PROFILE CARD */
+
+.pro-container {
+
+  width: 100%;
+	background: linear-gradient(to top, #141e30, #243b55);
+	border-radius: 20px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: white;
+  padding : 15px 10px 15px 15px;
+	position: relative;
+	
+}
+
 
 /* Profile */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
@@ -286,11 +311,11 @@ svg{
 
 .card-container {
   width: 100%;
-	background-color: #112d32;
+	background: linear-gradient(to top, #141e30, #243b55);
 	border-radius: 20px;
 	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
 	color: #B3B8CD;
-  padding : 30px 10px 30px 30px;
+  padding : 15px 10px 15px 15px;
 	position: relative;
 	
 }
@@ -321,24 +346,6 @@ svg{
 
 
 
-/* Fake image */
-.fakeimg {
-  /* background-color: #aaa; */
-  width: 50%;
-  padding: 20px;
-  float: left;
-}
-
-
-
-/* Add a card effect for articles */
-.card {
-  background-color: beige;
-  width : 100%;
-  padding: 20px;
-  
-}
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -346,13 +353,7 @@ svg{
   clear: both;
 }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
+
 
 img{
   max-width: 100%;
@@ -361,6 +362,7 @@ img{
 }
 
 /* Style the top navigation bar */
+
 .topnav {
 
   /* background-color: black; */
