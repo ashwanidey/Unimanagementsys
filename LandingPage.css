@@ -42,14 +42,113 @@ body {
   padding: 20px;
 }
 
-
-
-#number{
+/* TOTAL ATTENDENCE  */ 
+#number1{
 	/* background-color: #03BFCB; */
   font-family: Georgia;
   width: fit-content;
   text-align: center;
 	font-size: 1vw;
+	font-weight: bold;
+  color: #0d172a;
+	padding: 0 0 0 5px;
+}
+.box1{
+  display: inline-block;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 0 0 ;
+  width: fit-content;
+  height: auto;
+  /* background-color: black; */
+  position: relative;
+}
+.outer1{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 11vw;
+  height: 11vw;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+  -6px -6px 10px -1px rgba(255,255,255,0.7);
+
+}
+
+.inner1{
+
+  background-color: white;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+  inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+  -0.5px -0.5px 0px rgba(255,255,255,1),
+  0.5px 0.5px 0px rgba(0,0,0,0.15),
+  0px 12px 10px -10px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.a2{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 1.5vw;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim1 2s linear forwards;
+}
+.a1{
+  /* background-color: #03BFCB; */
+  position: absolute;
+  top: 2px;
+  width: 11vw;
+  height: 11vw;
+
+}
+
+@keyframes anim1{
+  100%{
+    stroke-dashoffset: 165;
+  }
+}
+
+/* END */
+
+.att-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+  padding : 10px ;
+	position: relative;
+	
+}
+
+.att1-container {
+  width: fit-content;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+  padding : 10px;
+	position: relative;
+	
+}
+#number{
+	/* background-color: #03BFCB; */
+  font-family: Arial, Helvetica, sans-serif;
+  width: fit-content;
+  text-align: center;
+	font-size: 0.7vw;
 	font-weight: bold;
   color: #0d172a;
 	padding: 0 0 0 5px;
@@ -65,25 +164,27 @@ body {
   /* background-color: white; */
   position: relative;
 }
+
 .outer{
 
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
-  width: 11vw;
-  height: 11vw;
+  width: 5vw;
+  height: 5vw;
   border-radius: 50%;
   padding: 6px;
   box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
   -6px -6px 10px -1px rgba(255,255,255,0.7);
 
 }
+
 .inner{
 
   background-color: white;
-  width: 8vw;
-  height: 8vw;
+  width: 4vw;
+  height: 4vw;
   border-radius: 50%;
   box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
   inset -4px -4px 6px -1px rgba(255,255,255,0.7),
@@ -100,9 +201,9 @@ body {
 circle{
   fill: none;
   stroke: url(#GradientColor);
-  stroke-width: 1.5vw;
-  stroke-dasharray: 472;
-  stroke-dashoffset: 472;
+  stroke-width: 0.5vw;
+  stroke-dasharray: 210;
+  stroke-dashoffset: 210;
   animation: anim 2s linear forwards;
 }
 
@@ -110,17 +211,64 @@ svg{
   /* background-color: #03BFCB; */
   position: absolute;
   top: 10px;
- 
-  width: 11vw;
-  height: 11vw;
-  
+  width: 5vw;
+  height: 5vw;
 }
-
 @keyframes anim{
   100%{
-    stroke-dashoffset: 165;
+    stroke-dashoffset: 0;
   }
 }
+
+
+.b1{
+  fill: none;stroke: url(#GradientColor);stroke-width: 0.5vw;stroke-dasharray: 210;stroke-dashoffset: 210;
+  animation: anim1 2s linear forwards;
+}
+@keyframes anim1{
+  100%{
+    stroke-dashoffset: 12.6;
+  }
+}
+.b2{
+  fill: none;stroke: url(#GradientColor);stroke-width: 0.5vw;stroke-dasharray: 210;stroke-dashoffset: 210;
+  animation: anim2 2s linear forwards;
+}
+@keyframes anim2{
+  100%{
+    stroke-dashoffset: 21;
+  }
+}
+.b3{
+  fill: none;stroke: url(#GradientColor);stroke-width: 0.5vw;stroke-dasharray: 210;stroke-dashoffset: 210;
+  animation: anim3 2s linear forwards;
+}
+@keyframes anim3{
+  100%{
+    stroke-dashoffset: 27.3;
+  }
+}
+.b4{
+  fill: none;stroke: url(#GradientColor);stroke-width: 0.5vw;stroke-dasharray: 210;stroke-dashoffset: 210;
+  animation: anim4 2s linear forwards;
+}
+@keyframes anim4{
+  100%{
+    stroke-dashoffset: 21;
+  }
+}
+.b5{
+  fill: none;stroke: url(#GradientColor);stroke-width: 0.5vw;stroke-dasharray: 210;stroke-dashoffset: 210;
+  animation: anim5 2s linear forwards;
+}
+@keyframes anim5{
+  100%{
+    stroke-dashoffset: 10.1;
+  }
+}
+
+
+
 
 /* Right column */
 .rightcolumn {
