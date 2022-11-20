@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grid</title>
+<style>
+body{
+    background-color:lightpink;
+}
+h1
+{
+text-align:center;
+color:maroon;
+}
+#grid{
+display: grid; /*used to display grid*/
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 2vw;
+}
+#grid > div{
+font-size: 1.5vw;
+padding: .3em;
+background:lightblue;
+text-align: center;
+transition: ease 0.3s;
+}
+.container{
+    border-radius: 5%;
+}
+
+#grid>div:hover{
+    transform:scale(1.1);
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+    }
+    .padding
+{
+padding:20px;
+
+background:olivedrab;
+}
+</style>
+</head>
+<body><h1>Monday</h1>
+<h2><div class="padding"><div id="grid" >
+<div class="container">11:00-12:00<br>
+Lecture/G:ALL C:INT108<br>
+R:25-403<br>
+S:K22SH</div>
+<div class="container">12:00-01:00<br>
+Lecture/G:ALL C:INT108<br>
+R:25-403<br>
+S:K22SH</div>
+<div class="container">02:00-03:00<br>
+Lecture/G:ALL C:CSE111<br>
+R:34-609<br>
+S:K22SH</div>
+<div class="container">03:00-04:00<br>
+Lecture/G:ALL C:PHY11O <br>
+R:33-503<br>
+S:K22SH</div>
+<div class="container">04:00-05:00<br>
+Lecture/G:ALL C:MTH174<br>
+R:34-402<br>
+S:K22SH</div></div></div></h2>
+<h1>Tuesday</h1>
+<h2><div class="padding"><div id="grid">
+<div class="container">11:00-12:00<br>
+Lecture/G:ALL C:CSE111<br>
+R:34-503<br>
+S:K22SH</div>
+<div class="container">01:00-02:00<br>
+Lecture/G:ALL C:PHY110<br>
+R:34-609<br>
+S:K22SH</div>
+<div>02:00-03:00<br>
+Lecture/G:ALL C:INT108<br>
+R:25-403<br>
+S:K22SH</div>
+<div class="container">03:00-04:00<br>
+Lecture/G:ALL C:CSE326<br>
+R:25-503<br>
+S:K22SH</div>
+<div class="container">04:00-05:00<br>
+Lecture/G:ALL C:CSE326<br>
+R:25-503<br>
+S:K22SH</div></div></div></h2>
+<h1>Wednesday</h1>
+<h2><div class="padding"><div id="grid">
+<div class="container">12:00-01:00<br>
+Lecture/G:01 C:PES318<br>
+R:27-306Y<br>
+S:K22SH</div>
+<div class="container">01:00-02:00<br>
+Lecture/G:01 C:PES318<br>
+R:27-306Y<br>
+S:K22SH</div>
+<div class="container">02:00-03:00<br>
+Lecture/G:ALL C:INT108<br>
+R:25-403<br>
+S:K22SH</div>
+<div class="container">03:00-04:00<br>
+Lecture/G:ALL C:MEC135<br>
+R:26-302<br>
+S:K22SH</div>
+<div class="container">04:00-05:00<br>
+Lecture/G:ALL C:PES318<br>
+R:34-406X<br>
+S:K22SH</div></div></div></h2>
+<h1>Thursday</h1>
+<h2><div class="padding"><div id="grid">
+<div class="container">08:00-09:00<br>
+Lecture/G:ALL C:MTH174<br>
+R:38-803<br>
+S:K22SH</div>
+<div class="container">09:00-10:00<br>
+Lecture/G:ALL C:MEC135<br>
+R:34-807<br>
+S:K22SH</div>
+<div class="container">10:00-11:00<br>
+Lecture/G:01 C:MTH174<br>
+R:34-407<br>
+S:K22SH</div>
+<div class="container">11:00-12:00<br>
+Lecture/G:ALL C:PHY110<br>
+R:34-609<br>
+S:K22SH</div>
+<div class="container">12:00-01:00<br>
+Lecture/G:ALL C:CSE111<br>
+R:33-402A<br>
+S:K22SH</div></div></div></h2>
+<h1>Friday</h1>
+<h2><div class="padding"><div id="grid">
+<div class="container">08:00-09:00<br>
+Lecture/G:ALL C:MEC135<br>
+R:38-803<br>
+S:K22SH</div>
+<div class="container">09:00-10:00<br>
+Lecture/G:ALL C:CSE326<br>
+R:25-503<br>
+S:K22SH</div>
+<div class="container">10:00-11:00<br>
+Lecture/G:01 C:INT108<br>
+R:25-403<br>
+S:K22SH</div>
+<div class="container">11:00-12:00<br>
+Lecture/G:ALL C:INT108<br>
+R:25-403<br>
+S:K22SH</div>
+<div class="container">12:00-01:00<br>
+Lecture/G:ALL C:MTH174<br>
+R:33-402A<br>
+S:K22SH</div></div></div></h2>
+</body>
+</html>
+</html>
+</body>
+</html>
