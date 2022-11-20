@@ -3,13 +3,10 @@
     min-height: 100%;
     align-items: center;
     justify-content: center;
-    background-color: #f9f9f9;
+    background-color: #fff;
     font-family: 'Open Sans', sans-serif;
   }
-body
-{
-    background-color:lightblue;
-}
+
  .cardStyle {
     width: 500px;
     border-color: white;
