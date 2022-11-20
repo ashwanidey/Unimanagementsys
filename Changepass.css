@@ -6,6 +6,10 @@
     background-color: #f9f9f9;
     font-family: 'Open Sans', sans-serif;
   }
+body
+{
+    background-color:lightblue;
+}
  .cardStyle {
     width: 500px;
     border-color: white;
