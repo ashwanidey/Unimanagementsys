@@ -2,14 +2,71 @@
   box-sizing: border-box;
 }
 
-/* Create two unequal columns that floats next to each other */
+/* TOP NAVIGATION BAR*/
+.topnav {
+  display: block;
+  padding: 40px 100px;
+  width:100%;
+ }
+.button{
+  box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+  border-radius: 1.5rem;
+  background-color: #2e9cca;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 20px 0 40px;
+  text-decoration: none;
+  float: right;
+  overflow: hidden;
+  position: relative;
+  bottom: 30px;
+}
+.margin{
+  margin : 10px;
+  width : fit-content;
+}
 
-/* Left column */
-.leftcolumn {
+/* Buttons */
+.button-81 {
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-81:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+@media (min-width: 600px) {
+  .button-81 {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.8rem;
+  }
+}
+
+
+/* RIGHT COLUMN */
+.rightcolumn {
   float: right;
   width: 70%;
   height: fit-content;
-  /* background-color: black; */
   padding: 20px 0 0 0;
 }
 
@@ -26,8 +83,6 @@
   padding : 10px ;
 	position: relative;
   bottom: 30px;
-  
-	
 }
 .time-box{
   width: fit-content;
@@ -43,7 +98,6 @@
 }
 .heading{
   width: 20%;
-	/* background-color: beige; */
 	font-family: Arial, Helvetica, sans-serif;
 	color: black;
   padding : 5px ;
@@ -52,6 +106,7 @@
 /* END */
 
 
+/* LAST ROW IN RIGHT SIDE */
 .thirdrow-container{
   display: flex;
   align-items: center;
@@ -68,7 +123,6 @@
 }
 /* ANNOUNCEMENTS */
 .ann-container{
-  
   width: 55%;
   height: fit-content;
 	background-color: #141e30;
@@ -81,44 +135,49 @@
 
 .heading2{
   width: 100%;
-	/* background-color: beige; */
 	font-family: Arial, Helvetica, sans-serif;
 	color: WHITE;
- font-size: 1.5vw;
+  font-size: 1.5vw;
   position: relative;
   top: 0;
 }
-
 .text1{
   font-family:serif;
   color: white;
 }
-
 /* END */
 
 
 /* TEACHER ON LEAVE */
+
 .leave-container{
- 
-  width: 40%;
-  
+  width: 40%; 
 	background-color: #0d172a;
 	border-radius: 20px;
 	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
 	color: #B3B8CD;
   padding : 10px ;
 	position: relative;
-  
   left: 30px;
   
 }
-
-
 /* END */
 
-/* TOTAL ATTENDENCE  */ 
+/* TOTAL ATTENDENCE  */
+.att1-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+  padding : 10px ;
+	position: relative;
+  bottom: 30px;	
+}
 #number1{
-	/* background-color: #03BFCB; */
   font-family: Georgia;
   width: fit-content;
   text-align: center;
@@ -135,11 +194,9 @@
   padding: 0 20px 0 0 ;
   width: fit-content;
   height: auto;
-  /* background-color: black; */
   position: relative;
 }
 .outer1{
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,11 +207,8 @@
   padding: 6px;
   box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
   -6px -6px 10px -1px rgba(255,255,255,0.7);
-
 }
-
 .inner1{
-
   background-color: white;
   width: 8vw;
   height: 8vw;
@@ -184,31 +238,16 @@
   height: 11vw;
 
 }
-
 @keyframes anim{
   100%{
     stroke-dashoffset: 80;
   }
 }
-
 /* END */
 
-.att-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-	background-color: white;
-	border-radius: 20px;
-	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
-	color: #B3B8CD;
-  padding : 10px ;
-	position: relative;
-  bottom: 30px;
-	
-}
 
-.att1-container {
+/* SUB ATTENDENCE */
+.att-container {
   width: fit-content;
 	background-color: white;
 	border-radius: 20px;
@@ -219,7 +258,6 @@
 	
 }
 #number{
-	/* background-color: #03BFCB; */
   font-family: Arial, Helvetica, sans-serif;
   width: fit-content;
   text-align: center;
@@ -236,12 +274,9 @@
   padding: 10px ;
   width: fit-content;
   height: auto;
-  /* background-color: white; */
   position: relative;
 }
-
 .outer{
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,11 +287,8 @@
   padding: 6px;
   box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
   -6px -6px 10px -1px rgba(255,255,255,0.7);
-
 }
-
 .inner{
-
   background-color: white;
   width: 4vw;
   height: 4vw;
@@ -270,9 +302,6 @@
   align-items: center;
   justify-content: center;
 }
-
-
-
 circle{
   fill: none;
   stroke: url(#GradientColor);
@@ -281,7 +310,6 @@ circle{
   stroke-dashoffset: 210;
   animation: anime 2s linear forwards;
 }
-
 svg{
   /* background-color: #03BFCB; */
   position: absolute;
@@ -294,7 +322,6 @@ svg{
     stroke-dashoffset: 0;
   }
 }
-
 
 .b1{
   fill: none;stroke: url(#GradientColor);stroke-width: 0.5vw;stroke-dasharray: 210;stroke-dashoffset: 210;
@@ -345,20 +372,16 @@ svg{
 
 
 
-/* Right column */
-
-.rightcolumn {
-  
+/*LEFT COLUMN*/
+.leftcolumn {  
   float: left;
   width: 25%;
   height: fit-content;
-  /* background-color: black; */
   padding: 20px 0 0 0 ;
 }
+
 /* PROFILE CARD */
-
 .pro-container {
-
   width: 100%;
 	background: linear-gradient(to top, #141e30, #243b55);
 	border-radius: 20px;
@@ -369,11 +392,8 @@ svg{
 	
 }
 
-
 /* Profile */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-
 .card-container {
   width: 100%;
 	background: linear-gradient(to top, #141e30, #243b55);
@@ -388,15 +408,12 @@ svg{
 
 .card-container .name {
   display: inline-block;
-	/* background-color: #03BFCB; */
 	font-family: Montserrat;
 	vertical-align: middle;
   width: 50%;
 	font-size: 1.2vw;
 	font-weight: bold;
 	padding: 0 0 0 5px;
-	
-
 }
 
 .card-container .round {
@@ -407,95 +424,9 @@ svg{
   flex: left;
 	padding: 7px;
   vertical-align: middle;
-  
 }
 
 
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-img{
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-}
-
-/* Style the top navigation bar */
-
-.topnav {
-
-  /* background-color: black; */
-  display: block;
-
-  padding: 40px 100px;
-  width:100%;
- }
-.button{
-  box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
-  border-radius: 1.5rem;
-  background-color: #2e9cca;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  padding: 0 20px 0 40px;
-  text-decoration: none;
-  float: right;
-  overflow: hidden;
-  position: relative;
-  bottom: 30px;
-  
-
-}
-
-.margin{
-  margin : 10px;
-  width : fit-content;
-}
-
-
-
-/* Buttons */
-.button-81 {
-  background-color: #fff;
-  border: 0 solid #e2e8f0;
-  border-radius: 1.5rem;
-  box-sizing: border-box;
-  color: #0d172a;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: 1.1rem;
-  font-weight: 600;
-  line-height: 1;
-  padding: 1rem 1.6rem;
-  text-align: center;
-  text-decoration: none #0d172a solid;
-  text-decoration-thickness: auto;
-  transition: all .1s cubic-bezier(.4, 0, .2, 1);
-  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-81:hover {
-  background-color: #1e293b;
-  color: #fff;
-}
-
-@media (min-width: 600px) {
-  .button-81 {
-    font-size: 0.9rem;
-    padding: 0.7rem 1.8rem;
-  }
-}
 
 
 
