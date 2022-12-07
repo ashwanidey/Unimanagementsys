@@ -3,7 +3,7 @@ var password = document.getElementById("password")
 
 
 enableSubmitButton();
-
+// Name.txt
 function validatePassword() {
   if(password.value != confirm_password.value) {
     confirm_password.setCustomValidity("Passwords Don't Match");
